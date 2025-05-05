@@ -19,38 +19,13 @@ const FeatureSupplier = ({ supplier }) => {
               {supplier.status}
             </span>
           </div>
-          <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
-            {supplier.tags.slice(0, 2).map((tag, idx) => (
-              <span
-                key={idx}
-                className="px-3 py-1 md:px-4 md:py-1.5 bg-[#4E2DB320] text-[#4E2DB3] rounded-full text-xs md:text-sm font-medium"
-              >
-                #{tag}
-              </span>
-            ))}
+          <div className="flex items-center justify-center my-6 overflow-hidden">
+            <img
+              className="h-32 w-full object-contain"
+              src={supplier.imageUrl}
+              alt={supplier.name}
+            />
           </div>
-          <p className="text-gray-600 mb-4 md:mb-6 flex items-center text-sm md:text-base">
-            <svg
-              className="w-4 h-4 md:w-5 md:h-5 mr-2 text-gray-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-            {supplier.address}
-          </p>
         </div>
         <a
           href={`https://${supplier.url}`}

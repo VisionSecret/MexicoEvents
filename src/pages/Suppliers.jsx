@@ -30,10 +30,10 @@ const suppliers = [
     tags: [
       "RPA",
       "AI",
-      "Process Automation",
-      "Bot Automation",
-      "Digital Transformation",
       "Task Automation",
+      "Bot Automation",
+      "Process Automation",
+      "Digital Transformation",
     ],
   },
   {
@@ -46,11 +46,10 @@ const suppliers = [
     address: "Blvd. Antonio L. Rodriguez #3000. Torre Albia, Monterrey, NL",
     tags: [
       "Low-code",
-      "Automation",
-      "Business Apps",
       "Appian",
-      "Digital Services",
+      "Business Applications",
       "Workflow Automation",
+      "Digital Transformation",
     ],
   },
   {
@@ -65,11 +64,11 @@ const suppliers = [
     tags: [
       "RPA",
       "AI",
-      "Workflow",
+      "Workflow Automation",
       "ITSM",
       "Enterprise Software",
-      "Service Automation",
       "AIOps",
+      "Service Automation",
     ],
   },
   {
@@ -82,8 +81,8 @@ const suppliers = [
     address: "555 North Point Center East 4th Floor Alpharetta, GA 30022, USA",
     tags: [
       "RPA",
-      "Digital Workforce",
       "Staffing",
+      "Digital Workforce",
       "IT Consulting",
       "Talent Solutions",
       "Automation Services",
@@ -98,12 +97,12 @@ const suppliers = [
       "Company / Consultant Name: Flo Networks Website: www.flo.net Location (Physical Address): Areas [...]",
     address: "Mexico, USA, and some LATAM countries",
     tags: [
-      "Intelligent Automation",
       "AI",
+      "Intelligent Automation",
       "Network Services",
-      "Connectivity",
-      "Managed Services",
       "Cloud Networking",
+      "Managed Services",
+      "Connectivity",
     ],
   },
   {
@@ -116,13 +115,13 @@ const suppliers = [
     address:
       " Ricardo Margain 315, Santa Engracia neighborhood, San Pedro Garza García",
     tags: [
-      "Document Automation",
-      "KTA",
       "Cloud",
       "IoT",
-      "Telecom",
       "5G",
       "AI Infrastructure",
+      "Document Automation",
+      "KTA",
+      "Telecom",
     ],
   },
   {
@@ -136,12 +135,245 @@ const suppliers = [
       "Blvd Díaz Ordaz 140, tower 2 ph1, Colonia Santa María, Monterrey Nuevo León",
     tags: [
       "CRM",
+      "ERP",
+      "Automation",
+      "Business Software",
+      "Consulting",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "Inetum",
+    url: "www.inetum.com",
+    imageUrl: "/images/Suppliers/Inetum.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Inetum Website: www.inetum.com Location (Physical Address): Mexico / [...]",
+    address: "Mexico / Monterrey",
+    tags: [
+      "CRM",
+      "ERP",
+      "Automation",
+      "Business Software",
+      "Consulting",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "Intelligence",
+    url: "www.Intelligence.com",
+    imageUrl: "/images/Suppliers/IntelligenIT.jpeg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Intelligenit Website: https://www.intelligenit.com/ Location (Physical Address): Sendero Sur [...]",
+    address: "Sendero Sur 2900, Balcones del Mirador, 64790 Monterrey, NL",
+    tags: [
+      "CRM",
+      "ERP",
+      "Automation",
+      "Business Software",
+      "Consulting",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "ISITA",
+    url: "www.isitatech.com",
+    imageUrl: "/images/Suppliers/isita.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: ISITA Website: www.isitatech.com Physical Address: Av. Lázaro [...]",
+    address: "Av. Lázaro Cárdenas 435, Floor 12 -1230 Loma Larga Oriente Zone",
+    tags: [
+      "CRM",
+      "ERP",
+      "Automation",
+      "Business Software",
+      "Consulting",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "IT Matters",
+    url: "www.itmatters.pro",
+    imageUrl: "/images/Suppliers/it-matters.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: IT Matters Website: www.itmatters.pro Location (Physical Address): Ave. [...]",
+    tags: [
+      "CRM",
       "Automation",
       "ERP",
       "Consulting",
       "Business Software",
       "Digital Transformation",
     ],
+  },
+  {
+    name: "Lumina Software",
+    url: "www.luminasoftware.com/site/",
+    imageUrl: "/images/Suppliers/lumina.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Lumina Software Website: www.luminasoftware.com/site/ Location (Physical Address): Jdn. [...]",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "Kairós Digital Solutions",
+    url: "https://kairosds.com/",
+    imageUrl: "/images/Suppliers/kairos.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Kairós Digital Solutions Website: https://kairosds.com/ Location (Physical Address): [...]",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "Madiba Consulting",
+    url: "www.linkedin.com/in/arturo-equihua-pmp-mba-msc-itilv4-a40187",
+    imageUrl: "/images/Suppliers/Madiba.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Madiba Consulting Website: www.linkedin.com/in/arturo-equihua-pmp-mba-msc-itilv4-a401875 Physical Address: Av. [...]",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "MICRO NETWORK",
+    url: "www.microred.com.mx",
+    imageUrl: "/images/Suppliers/microred.jpg",
+    status: "Active",
+    details:
+      "Company / consultant name: MICRO RED Website: www.microred.com.mx Location (Physical Address): Monterrey, [...]",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "MCM TELECOM",
+    url: "www.mcmtelecom.com/",
+    imageUrl: "/images/Suppliers/MCM.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: MCM TELECOM Website: www.mcmtelecom.com/ Location (Physical Address): Av. [...]",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "MISSIO in ACTIO",
+    url: "www.missioinactio.com/",
+    imageUrl: "/images/Suppliers/Missio.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: MISSIO in ACTIO Website: www.missioinactio.com Location (Physical Address): [...]",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
+  },
+  {
+    name: "MovIT Solutions Group",
+    url: "www.movitsg.com",
+    imageUrl: "/images/Suppliers/MovIT.jpeg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: MovIT Solutions Group Website: www.movitsg.com Location (Physical Address): México / [...]",
+    address: "México / Ubicación no especificada",
+    tags: ["IT Solutions", "Consulting"],
+  },
+  {
+    name: "Netsoft",
+    url: "www.netsoft.com",
+    imageUrl: "/images/Suppliers/Netsoft.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Netsoft Website: www.netsoft.com Location (Physical Address): Av. Lazaro [...]",
+    address: "México / Av. Lazaro",
+    tags: ["ERP", "NetSuite", "Business Consulting"],
+  },
+  {
+    name: "Nexta Technology Services, S.A. de C.V.",
+    url: "www.nexta.mx",
+    imageUrl: "/images/Suppliers/Nexta.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Nexta Technology Services, S.A. de C.V. Website: www.nexta.mx Location (Physical Address): México / [...]",
+    address: "México / Ubicación no especificada",
+    tags: ["Cloud", "ERP", "CRM", "Consulting"],
+  },
+  {
+    name: "Teledinámica México",
+    url: "www.teledinamica.com.mx",
+    imageUrl: "/images/Suppliers/Teledinamica.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Teledinámica México Website: www.teledinamica.com.mx Location (Physical Address): PM / [...]",
+    address: "México / PM",
+    tags: ["VoIP", "Telecom", "IT", "Consulting"],
+  },
+  {
+    name: "Tesys21",
+    url: "https://tesys21.com",
+    imageUrl: "/images/Suppliers/Tesys21.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: Tesys21 Website: https://tesys21.com Location (Physical Address): Maurice Ravel / [...]",
+    address: "México / Maurice Ravel",
+    tags: ["ERP", "Cloud", "Business Consulting"],
+  },
+  {
+    name: "TRANSNOTE (T-NOTE) / Carlos Ramírez",
+    url: "https://tn-note.com",
+    imageUrl: "/images/Suppliers/TNote.png",
+    status: "Active",
+    details:
+      "Company / Consultant Name: TRANSNOTE (T-NOTE) / Carlos Ramírez Website: https://tn-note.com Location (Physical Address): México / [...]",
+    address: "México / Ubicación no especificada",
+    tags: ["ERP", "Consulting", "Digital Transformation"],
+  },
+  {
+    name: "ZENTIUS",
+    url: "www.zentius.com.mx",
+    imageUrl: "/images/Suppliers/Zentius.jpg",
+    status: "Active",
+    details:
+      "Company / Consultant Name: ZENTIUS Website: www.zentius.com.mx Location (Physical Address): San Pedro / [...]",
+    address: "México / San Pedro",
+    tags: ["Digital Transformation", "ERP", "Consulting"],
   },
 ];
 
@@ -156,7 +388,7 @@ const Suppliers = () => {
   // Search filtering logic
   useEffect(() => {
     const query = searchQuery.trim().toLowerCase();
-  
+
     if (!query) {
       setNotFound(""); // ✅ reset when search is cleared
       setDisplayedSuppliers(suppliers);
@@ -166,17 +398,16 @@ const Suppliers = () => {
           supplier.name.toLowerCase().includes(query) ||
           supplier.tags.some((tag) => tag.toLowerCase().includes(query))
       );
-  
+
       if (filtered.length === 0) {
         setNotFound("Search not found");
         setDisplayedSuppliers([]);
       } else {
-        setNotFound(""); 
+        setNotFound("");
         setDisplayedSuppliers(filtered);
       }
     }
   }, [searchQuery, suppliers]);
-
 
   // GSAP Animations
   useGSAP(
@@ -199,20 +430,16 @@ const Suppliers = () => {
         delay: 0.3,
       });
 
-      gsap.set(".supplier-card", { opacity: 0, y: 50 });
-
-      // Animate on scroll
       gsap.utils.toArray(".supplier-card").forEach((card) => {
-        gsap.to(card, {
+        gsap.from(card, {
+          y: 90,
+          duration: 0.6,
+          ease: "power2.out",
           scrollTrigger: {
             trigger: card,
             start: "top 80%",
             toggleActions: "play none none none",
           },
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: "power2.out",
         });
       });
 

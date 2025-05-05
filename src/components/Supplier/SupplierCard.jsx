@@ -1,6 +1,6 @@
 const SupplierCard = ({ supplier }) => {
   return (
-    <div className="supplier-card h-[400px] flex flex-col group bg-white rounded-xl md:rounded-2xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-[#4E2DB310] hover:scale-105 overflow-hidden">
+    <div className="supplier-card h-[400px] flex flex-col group bg-white rounded-xl md:rounded-2xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-[#4E2DB310] hover:scale-105 opacity-1 overflow-hidden">
       {/* Image (takes up ~40% height) */}
       <div className="h-[40%] w-full flex items-center justify-center overflow-hidden">
         <img
