@@ -14,28 +14,28 @@ const slides = [
   {
     title: "Conoce los tipos de membresía",
     description: "Contáctanos para enviarte toda la información",
-    image: "/images/slider1.png",
+    image: "/images/HomePage/slider1.png",
   },
   {
     title: "Developing Organic Growth Engine With AI",
     description: "Lidia Vijga, Co-founder of DeckLinks.",
-    image: "/images/slider2.jpg",
+    image: "/images/HomePage/slider2.jpg",
   },
   {
     title: "Tendencias de IA 2025",
     description: "Elvira Chapa, VP Executive Advisor en Gartner.",
-    image: "/images/slider3.jpg",
+    image: "/images/HomePage/slider3.jpg",
   },
   {
     title: "Posada AMPID",
     description: "Así cerramos un año lleno de éxitos.",
-    image: "/images/slider4.jpg",
+    image: "/images/HomePage/slider4.jpg",
   },
   {
     title: "Innovación Exponencial",
     description:
       "Expositor: Francisco Corona, CTO para servicios en la Nube en Microsoft México.",
-    image: "/images/slider5.jpg",
+    image: "/images/HomePage/slider5.jpg",
   },
 ];
 

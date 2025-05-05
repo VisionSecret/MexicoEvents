@@ -13,7 +13,7 @@ const SupplierSearch = ({ searchQuery ,setSearchQuery}) => {
         <input
           type="text"
           placeholder="Search suppliers, technologies, locations..."
-          className="w-full px-6 py-4 md:px-8 md:py-5 rounded-2xl border-0 focus:ring-4 focus:ring-[#4E2DB370] transition-all outline-none shadow-xl backdrop-blur-sm bg-white/70"
+          className="w-full px-6 py-4 md:px-8 md:py-5 rounded-2xl border-0 placeholder:text-xs md:placeholder:text-lg focus:ring-4 focus:ring-[#4E2DB370] transition-all outline-none shadow-xl backdrop-blur-sm bg-white/70"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />

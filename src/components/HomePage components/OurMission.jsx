@@ -154,7 +154,7 @@ const OurMission = () => {
           >
             {/* Placeholder Image */}
             <img
-              src="/images/thumbnail.png"
+              src="/images/HomePage/thumbnail.png"
               alt="Video Thumbnail"
               className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-all duration-500"
             />

@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
                 <img
                   className="rounded-full w-12 h-12 object-cover"
-                  src="/images/profile.png"
+                  src="/images/HomePage/profile.png"
                   alt="Profile"
                 />
               </div>
@@ -113,7 +113,7 @@ const Hero = () => {
               className="hero-image rounded-xl h-[400px] w-full flex items-center justify-center"
             >
               <img
-                src="/images/heroImage.png"
+                src="/images/HomePage/heroImage.png"
                 alt="Event"
                 className="object-cover object-center rounded-xl"
               />

@@ -1,6 +1,6 @@
 import React from "react";
 
-const FeatureSupplier = ({supplier}) => {
+const FeatureSupplier = ({ supplier }) => {
   return (
     <div className="featured-card h-full py-4 md:py-6">
       <div className="featured-content bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all h-full flex flex-col justify-between border border-gray-100">
@@ -20,7 +20,7 @@ const FeatureSupplier = ({supplier}) => {
             </span>
           </div>
           <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
-            {supplier.tags.map((tag, idx) => (
+            {supplier.tags.slice(0, 2).map((tag, idx) => (
               <span
                 key={idx}
                 className="px-3 py-1 md:px-4 md:py-1.5 bg-[#4E2DB320] text-[#4E2DB3] rounded-full text-xs md:text-sm font-medium"

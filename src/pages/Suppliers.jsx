@@ -20,52 +20,128 @@ gsap.registerPlugin(ScrollTrigger);
 const suppliers = [
   {
     name: "Automation Anywhere",
-    url: "automation.com",
+    url: "www.automationanywhere.com",
+    imageUrl: "/images/Suppliers/automation.jpg",
     status: "Active",
-    address: "1234 Tech Park, Silicon Valley",
-    tags: ["RPA", "AI", "Process Automation"],
+    details:
+      "Company / Consultant Name: Automation Anywhere Website: www.automationanywhere.com Location (Physical Address): Av. [...]",
+    address:
+      "Av. Insurgentes Sur 1425 - 16th Floor, Insurgentes Mixcoac, Benito Juárez, 03920 CDMX",
+    tags: [
+      "RPA",
+      "AI",
+      "Process Automation",
+      "Bot Automation",
+      "Digital Transformation",
+      "Task Automation",
+    ],
   },
   {
-    name: "Appian",
-    url: "appian.com",
+    name: "Alvatrix Global Services",
+    url: "www.alvatrix.com",
+    imageUrl: "/images/Suppliers/AlvatrixLogo.png",
     status: "Inactive",
-    address: "3344 Low-code Blvd, Austin, TX",
-    tags: ["Low-code", "Automation"],
+    details:
+      "Company / Consultant Name: Alvatrix Global Services Website: www.alvatrix.com Location (Physical Address): [...]",
+    address: "Blvd. Antonio L. Rodriguez #3000. Torre Albia, Monterrey, NL",
+    tags: [
+      "Low-code",
+      "Automation",
+      "Business Apps",
+      "Appian",
+      "Digital Services",
+      "Workflow Automation",
+    ],
   },
   {
-    name: "UiPath",
-    url: "uipath.com",
+    name: "BMC",
+    url: "www.bmc.com",
+    imageUrl: "/images/Suppliers/BMC.jpg",
     status: "Active",
-    address: "5678 Innovation Drive, New York, NY",
-    tags: ["RPA", "AI", "Workflow"],
+    details:
+      "Company / Consultant Name: BMC Website: www.bmc.com Location (Physical Address): Volcán 150 [...]",
+    address:
+      "Volcán 150, 2nd Floor, Off 202, Lomas de Chapultepec, Miguel Hidalgo, CDMX",
+    tags: [
+      "RPA",
+      "AI",
+      "Workflow",
+      "ITSM",
+      "Enterprise Software",
+      "Service Automation",
+      "AIOps",
+    ],
   },
   {
-    name: "Blue Prism",
-    url: "blueprism.com",
+    name: "Equal-Plus, Inc",
+    url: "www.equal-plus.com",
+    imageUrl: "/images/Suppliers/equal-plus.jpg",
+    status: "Active",
+    details:
+      "Company/Consultant Name: Equal-Plus, Inc. Website: www.equal-plus.com Physical Address: 555 [...]",
+    address: "555 North Point Center East 4th Floor Alpharetta, GA 30022, USA",
+    tags: [
+      "RPA",
+      "Digital Workforce",
+      "Staffing",
+      "IT Consulting",
+      "Talent Solutions",
+      "Automation Services",
+    ],
+  },
+  {
+    name: "Flo Networks",
+    url: "www.flo.net",
+    imageUrl: "/images/Suppliers/flo.jpg",
     status: "Inactive",
-    address: "9012 Blue St, London, UK",
-    tags: ["RPA", "Digital Workforce"],
+    details:
+      "Company / Consultant Name: Flo Networks Website: www.flo.net Location (Physical Address): Areas [...]",
+    address: "Mexico, USA, and some LATAM countries",
+    tags: [
+      "Intelligent Automation",
+      "AI",
+      "Network Services",
+      "Connectivity",
+      "Managed Services",
+      "Cloud Networking",
+    ],
   },
   {
-    name: "WorkFusion",
-    url: "workfusion.com",
+    name: "HUAWEI",
+    url: "https://www.huawei.com/mx/",
+    imageUrl: "/images/Suppliers/Huawei.png",
     status: "Active",
-    address: "3456 Automation Ave, Boston, MA",
-    tags: ["Intelligent Automation", "AI"],
+    details:
+      "Company / Consultant Name: HUAWEI Website: www.huawei.com/mx/ Physical Address: Ricardo Margain [...]",
+    address:
+      " Ricardo Margain 315, Santa Engracia neighborhood, San Pedro Garza García",
+    tags: [
+      "Document Automation",
+      "KTA",
+      "Cloud",
+      "IoT",
+      "Telecom",
+      "5G",
+      "AI Infrastructure",
+    ],
   },
   {
-    name: "Kofax",
-    url: "kofax.com",
+    name: "CONSIST",
+    url: "www.consiss.com",
+    imageUrl: "/images/Suppliers/consiss.jpeg",
     status: "Active",
-    address: "7890 Capture Ln, Chicago, IL",
-    tags: ["Document Automation", "KTA"],
-  },
-  {
-    name: "Pegasystems",
-    url: "pega.com",
-    status: "Active",
-    address: "1122 Agile Rd, Cambridge, MA",
-    tags: ["CRM", "Automation"],
+    details:
+      "Company / Consultant Name: CONSISS Website: www.consiss.com Location (Physical Address): Blvd Díaz [...]",
+    address:
+      "Blvd Díaz Ordaz 140, tower 2 ph1, Colonia Santa María, Monterrey Nuevo León",
+    tags: [
+      "CRM",
+      "Automation",
+      "ERP",
+      "Consulting",
+      "Business Software",
+      "Digital Transformation",
+    ],
   },
 ];
 
@@ -80,26 +156,27 @@ const Suppliers = () => {
   // Search filtering logic
   useEffect(() => {
     const query = searchQuery.trim().toLowerCase();
-
-    if (query) {
+  
+    if (!query) {
+      setNotFound(""); // ✅ reset when search is cleared
+      setDisplayedSuppliers(suppliers);
+    } else {
       const filtered = suppliers.filter(
         (supplier) =>
           supplier.name.toLowerCase().includes(query) ||
           supplier.tags.some((tag) => tag.toLowerCase().includes(query))
       );
-
+  
       if (filtered.length === 0) {
         setNotFound("Search not found");
         setDisplayedSuppliers([]);
       } else {
-        setNotFound(""); // ✅ reset notFound here
+        setNotFound(""); 
         setDisplayedSuppliers(filtered);
       }
-    } else {
-      setNotFound(""); // ✅ also reset here when query is cleared
-      setDisplayedSuppliers(suppliers);
     }
-  }, [searchQuery]);
+  }, [searchQuery, suppliers]);
+
 
   // GSAP Animations
   useGSAP(
@@ -122,25 +199,22 @@ const Suppliers = () => {
         delay: 0.3,
       });
 
-      // Grid animation setup
-      const setupGridAnimations = () => {
-        ScrollTrigger.batch(".supplier-card", {
-          start: "top 90%",
-          onEnter: (batch) =>
-            gsap.to(batch, {
-              opacity: 1,
-              y: 0,
-              stagger: 0.1,
-              duration: 0.6,
-              ease: "power2.out",
-            }),
-          once: true,
-        });
-      };
+      gsap.set(".supplier-card", { opacity: 0, y: 50 });
 
-      // Initial setup
-      gsap.set(".supplier-card", { opacity: 0, y: 100 });
-      setupGridAnimations();
+      // Animate on scroll
+      gsap.utils.toArray(".supplier-card").forEach((card) => {
+        gsap.to(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power2.out",
+        });
+      });
 
       // Hover effects
       gsap.utils.toArray(".supplier-card").forEach((card) => {
@@ -182,7 +256,7 @@ const Suppliers = () => {
 
       {/* Featured Carousel - Only show if not searching */}
       {searchQuery.trim() === "" && (
-        <div className="max-w-7xl mx-auto mb-12 md:mb-20 px-2 md:px-4">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-20 md:px-4">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 ml-2">
             Featured Suppliers
           </h2>
@@ -227,7 +301,7 @@ const Suppliers = () => {
             }}
             className="relative"
           >
-            {suppliers.slice(0, 5).map((supplier, i) => (
+            {suppliers.map((supplier, i) => (
               <SwiperSlide key={i}>
                 <FeatureSupplier key={supplier.name + i} supplier={supplier} />
               </SwiperSlide>
@@ -260,7 +334,7 @@ const Suppliers = () => {
               different keywords or check your spelling.
             </p>
           </div>
-        ) : (
+        ) : displayedSuppliers && displayedSuppliers.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-2 md:px-4">
             {displayedSuppliers.map((supplier, idx) => (
               <SupplierCard
@@ -269,6 +343,10 @@ const Suppliers = () => {
                 idx={idx}
               />
             ))}
+          </div>
+        ) : (
+          <div className="text-center text-gray-500 py-12">
+            Loading suppliers...
           </div>
         )}
       </div>

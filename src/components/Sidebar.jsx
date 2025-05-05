@@ -66,7 +66,7 @@ const Sidebar = ({ menuOpen, setMenuOpen, navLinks }) => {
         </ul>
 
         {/* Mobile CTA Buttons */}
-        <div className="flex flex-col gap-4 mb-12">
+        <div className="flex flex-col gap-4">
           <button className="w-full px-6 py-3 text-[#5F3DD3] font-semibold bg-gradient-to-r from-purple-50 to-blue-50 border-2 border-[#5F3DD3] rounded-full hover:bg-gradient-to-r hover:from-purple-100 hover:to-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-[#5F3DD3]/30 active:scale-95 animate-bounce z-40">
             SEE MORE
           </button>
